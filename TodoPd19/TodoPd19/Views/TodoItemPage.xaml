@@ -9,16 +9,24 @@
     <StackLayout Margin="20" VerticalOptions="StartAndExpand">
         <!--<Label Text="{Binding ID}" />-->
         <!--<Entry Text="{Binding ID}" />-->
-        <Label Text="Name" />
+        <Label Text="Nombre" />
         <Entry Text="{Binding Name}" Visual="Material"/>
-        <Label Text="Notes" />
+        <Label Text="Apellidos" />
+        <Entry Text="{Binding apellidos}" Visual="Material"/>
+        <Label Text="Edad" />
+        <Entry Text="{Binding edad}" Visual="Material"/>
+        <Label Text="Dirección" />
+        <Entry Text="{Binding direccion}" Visual="Material"/>
+        <Label Text="Puesto" />
+        <Entry Text="{Binding puesto}" Visual="Material"/>
+        <Label Text="Nota" />
         <Entry Text="{Binding Notes}" Visual="Material" />
         <Label Text="Done" />
         <Switch IsToggled="{Binding Done, Mode=TwoWay}" Visual="Material" />
         <Button Text="Save" Command="{Binding OnSaveClicked}"  Visual="Material"/>
         <Button Text="Delete" Command="{Binding OnDeleteClicked}"  Visual="Material"/>
         <Button Text="Cancel" Command="{Binding OnCancelClicked}"  Visual="Material"/>
-        <Button Text="Speak" Command="{Binding OnSpeakClicked}"  Visual="Material"/>
+        
     </StackLayout>
 
 </ContentPage>

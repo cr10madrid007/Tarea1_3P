@@ -5,11 +5,11 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              x:Class="TodoPd19.Views.TodoListPage"
-             Title="Todo Pd19">
+             Title="Tarea IIIP">
 
   <ContentPage.ToolbarItems>
-    <ToolbarItem Text="Do" Command="{Binding ListDoneCommand}" />
-    <ToolbarItem Text="NDo" Command="{Binding ListNotDoneCommand}" />
+    
+    <ToolbarItem Text="Cantidad de Empleados" Command="{Binding ListNotDoneCommand}" />
     <ToolbarItem Text="+" Command="{Binding ItemAddedCommand}">
       <ToolbarItem.Icon>
         <OnPlatform x:TypeArguments="FileImageSource">
@@ -25,13 +25,8 @@
     </ListView.Behaviors>
     <ListView.ItemTemplate>
       <DataTemplate>
-        <TextCell Text="{Binding Name}" Detail="{Binding Notes}"/>
-        <!--<ViewCell>
-          <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
-            <Image Source="check.png" HorizontalOptions="End" IsVisible="{Binding Done}" />
-          </StackLayout>
-        </ViewCell>-->
+        <TextCell Text="{Binding Name}" Detail="{Binding apellidos}"/>
+        
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>

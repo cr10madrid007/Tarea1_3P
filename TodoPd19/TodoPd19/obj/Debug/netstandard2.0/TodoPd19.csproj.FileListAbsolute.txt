@@ -1,0 +1,14 @@
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\bin\Debug\netstandard2.0\TodoPd19.deps.json
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\bin\Debug\netstandard2.0\TodoPd19.dll
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\bin\Debug\netstandard2.0\TodoPd19.pdb
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\TodoPd19.csproj.AssemblyReference.cache
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\TodoPd19.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\Views\TodoItemPage.xaml.g.cs
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\Views\TodoListPage.xaml.g.cs
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\TodoPd19.AssemblyInfoInputs.cache
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\TodoPd19.AssemblyInfo.cs
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\TodoPd19.csproj.CoreCompileInputs.cache
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\TodoPd19.dll
+C:\Users\crist\source\repos\mvvm5\TodoPd19\TodoPd19\obj\Debug\netstandard2.0\TodoPd19.pdb

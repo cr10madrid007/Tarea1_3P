@@ -12,6 +12,11 @@ namespace TodoPd19.Models
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string Name { get; set; }
+        public string apellidos { get; set; }
+        public string edad { get; set; }
+        public string direccion { get; set; }
+        public string puesto { get; set; }
+
         public string Notes { get; set; }
         public bool Done { get; set; }
 

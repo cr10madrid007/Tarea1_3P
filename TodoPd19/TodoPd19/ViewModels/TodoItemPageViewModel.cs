@@ -49,6 +49,9 @@ namespace TodoPd19.ViewModels
                 TodoItem.ID = TodoItem.ID;
                 Name = TodoItem.Name;
                 Notes = TodoItem.Notes;
+                Edad = TodoItem.edad;
+                Puesto = TodoItem.puesto;
+                Direccion= TodoItem.direccion;
                 _todoItem.Done = TodoItem.Done;
                 EditMode = "Edit";
                 StrId = _todoItem.Name + " (" + _todoItem.ID.ToString() + ")";  // ???
@@ -63,7 +66,8 @@ namespace TodoPd19.ViewModels
         private string ItemsExpander(TodoItem item)
         {
             string result;
-            result = item.ID + " || " + item.Name + " || " + item.Notes + " || " + item.Done.ToString();
+            //result = item.ID + " || " + item.Name + " || " + item.Notes + " || " + item.Done.ToString();
+            result = item.ID + " || " + item.Name + " || " + item.apellidos+ " || " + item.edad + " || " + item.puesto + " || " + item.direccion + " || " + item.Notes + " || " + item.Done.ToString();
             return result;
         }
 
@@ -82,7 +86,7 @@ namespace TodoPd19.ViewModels
         {
             int id = TodoItem.ID;   // nur für Alert
             _dbService.DeleteItemAsync(TodoItem);
-            _dialogService.DisplayAlertAsync("Del Item", "Deleted ID: " + id.ToString(), "OK");
+            _dialogService.DisplayAlertAsync("Empleado eliminado", "el empleado con el siguiente ID fue eliminado: " + id.ToString(), "OK");
             _navigationService.GoBackAsync();
         }
 
@@ -92,6 +96,11 @@ namespace TodoPd19.ViewModels
             if (EditMode == "Edit")       // (TodoItem.ID > 0)
             {
                 TodoItem.Name = Name;
+                TodoItem.apellidos = Apellidos;
+                TodoItem.puesto = Puesto;
+                TodoItem.edad = Edad;
+                TodoItem.direccion = Direccion;
+
                 TodoItem.Notes = Notes;
                 TodoItem.Done = Done;
                 await _dbService.UpdateItemAsync(TodoItem);
@@ -101,6 +110,11 @@ namespace TodoPd19.ViewModels
             {
                 TodoItem item = new TodoItem();
                 item.Name = Name;
+                item.apellidos = Apellidos;
+                item.puesto = Puesto;
+                item.edad = Edad;
+                item.direccion = Direccion;
+
                 item.Notes = Notes;
                 item.Done = Done;
 
@@ -145,6 +159,35 @@ namespace TodoPd19.ViewModels
         {
             get { return _done; }
             set { SetProperty(ref _done, value); }
+        }
+
+
+        private string _puesto;
+        public string Puesto
+        {
+            get { return _puesto; }
+            set { SetProperty(ref _puesto, value); }
+        }
+
+        private string _apellidos;
+        public string Apellidos
+        {
+            get { return _apellidos; }
+            set { SetProperty(ref _apellidos, value); }
+        }
+
+        private string _edad;
+        public string Edad
+        {
+            get { return _edad; }
+            set { SetProperty(ref _edad, value); }
+        }
+
+        private string _direccion;
+        public string Direccion
+        {
+            get { return _direccion; }
+            set { SetProperty(ref _direccion, value); }
         }
     }
 }
